@@ -1,0 +1,25 @@
+\begin{tabular}{|c|c|c|c|}
+    \hline
+        \multicolumn{4}{|c|}{\textbf{główny router budynku A}} \\
+    \hline
+        sieć & maska & brama & interfejs \\
+    \hline
+        \multicolumn{4}{|c|}{(w przypadku awarii połączenia z routerem A:)} \\
+        0.0.0.0     &   0.0.0.0         &   96.0.0.0    &   eth1    \\
+        98.0.0.0    &   255.0 0 0       &   0.0.0.0     &   eth1    \\
+    \hline
+        \multicolumn{4}{|c|}{(Gdy wszystko działa:)} \\
+        0.0.0.0     &   0.0.0.0         &   193.1.42.1  &   eth0    \\
+        193.1.42.0  &   255.255.255.0   &   0.0.0.0     &   eth0    \\
+    \hline
+        100.0.0.0   &   255.0.0.0       &   0.0.0.0     &   eth1    \\
+        96.0.0.0    &   255.0.0.0       &   0.0.0.0     &   eth2    \\
+        98.32.0.0   &   255.240.0.0     &   0.0.0.0     &   eth3    \\
+        98.64.0.0   &   255.240.0.0     &   0.0.0.0     &   eth4    \\
+        98.128.0.0  &   255.240.0.0     &   0.0.0.0     &   eth5    \\
+        98.192.0.0  &   255.240.0.0     &   0.0.0.0     &   eth6    \\
+    
+    \hline
+    
+%\label{tab:netA}
+\end{tabular}
